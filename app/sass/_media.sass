@@ -5,16 +5,221 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .top-line
+    .main-menu
+      a
+        font-size: 14px
+        padding: 0 8px
+  .main-header
+    &-title
+      padding: 120px 0
+      p
+        padding: 0 110px
+        font-size: 22px
+  .about
+    font-size: 14px
+    &-photo
+      bottom: -67px
+  .products
+    &-item-cub
+      &-content
+        h2
+          padding: 45px 5px 15px
+        .price
+          font-size: 14px
+        p
+          padding: 35px 50px
+    &-item-horizon
+      &-wrapper
+        padding-bottom: 46.8%
+      &-content
+        h2
+          padding: 45px 5px 0
+          margin-bottom: 0
+        .price
+          font-size: 14px
+        p
+          padding: 25px 30px 0
+  .promo
+    p
+      padding-top: 40px
+    &-video
+      iframe
+        height: 300px
+  .blog
+    &-item
+      &-content
+        h3
+          font-size: 14px
+  .review
+    &-item
+      &-video
+        iframe
+          height: 260px
+
+
 
 // ≥992px
 +media-breakpoint-down(md)
+  .top-line
+    .phone
+      position: absolute
+      right: 80px
+  .main-header
+    &-title
+      padding: 100px 0
+      h1
+        font-size: 62px
+      p
+        padding: 0 110px
+        font-size: 18px
+  .about
+    &-photo
+      bottom: -8px
+  .products
+    &-item-cub
+      &-content
+        h2
+          font-size: 16px
+          padding: 25px 5px 15px
+        .price
+          font-size: 10px
+          bottom: 15px
+        p
+          padding: 10px 50px
+          font-size: 14px
+    &-item-horizon
+      &-wrapper
+        padding-bottom: 44.2%
+      &-content
+        h2
+          font-size: 16px
+          padding: 25px 5px 15px
+        .price
+          font-size: 10px
+          bottom: 15px
+        p
+          padding: 0 30px 0
+          font-size: 14px
+  .promo
+    p
+      padding-top: 10px
+      font-size: 14px
+    &-video
+      iframe
+        height: 220px
+  .blog
+    &-item
+      &-content
+        p
+          font-size: 12px
+  .review
+    &-item
+      &-video
+        iframe
+          height: 190px
+
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .main-header
+    &-title
+      padding: 80px 0
+      h1
+        font-size: 42px
+      p
+        padding: 0 70px
+        font-size: 14px
+  .mm-title
+    img
+      width: 150px
+      height: auto
+  ul.mm-listview
+    margin-top: 30px !important
+  .magnet
+    &-form
+      input
+        margin-bottom: 20px
+  .about
+    &-photo
+      bottom: 0
+  .products
+    &-item-cub
+      margin-bottom: 30px
+      &-wrapper
+        padding-bottom: 30%
+      &-content
+        h2
+          font-size: 16px
+          padding: 25px 5px 15px
+          margin-bottom: 0
+        .price
+          font-size: 14px
+          bottom: 15px
+    &-item-horizon
+      margin-bottom: 30px
+      margin-top: 0
+      &-wrapper
+        padding-bottom: 30%
+      &-content
+        h2
+          font-size: 16px
+          padding: 25px 5px 15px
+        .price
+          font-size: 14px
+          bottom: 15px
+  .promo
+    &-video
+      iframe
+        height: 285px
+  .blog
+    &-item
+      margin-top: 10px
+      &-content
+        h3
+          padding-top: 10px
+  .review
+    &-item
+      &-video
+        iframe
+          height: 290px
+
 
 // ≥576px
 +media-breakpoint-down(xs)
-
+  .main-header
+    &-title
+      p
+        padding: 0 30px
+  nav.soc
+    padding: 0 0 20px
+    ul, li
+      text-align: center
+  .products
+    &-item-cub
+      &-content
+        h2
+          font-size: 14px
+    &-item-horizon
+      &-content
+        h2
+          font-size: 14px
+  .promo
+    &-video
+      iframe
+        height: 240px
+  .blog
+    .hideblog
+      &:nth-last-child(2n+2)
+        display: none
+  .review
+    &-item
+      &-video
+        iframe
+          height: 225px
+    .hideblog
+      &:nth-last-child(2n+2)
+        display: none
 
 /*==========  Mobile First  ==========*/
 

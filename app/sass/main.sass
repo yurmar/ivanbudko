@@ -32,11 +32,508 @@ body
 	&.img-width
 		width: 100%
 
-.text-center
+.text-center,
+.center
 	text-align: center
 
 b, strong
 	font-weight: bold
+
+h2
+	font-size: 28px
+	font-weight: 300
+
+section
+	padding: 40px 0
+
+.button,
+.wpcf7-submit
+	display: inline-block
+	width: 100%
+	height: 45px
+	border: none
+	box-shadow: 0 -3px darken($accent, 7) inset
+	text-decoration: none
+	background-color: $accent
+	padding: 6px 45px
+	font-size: 22px
+	letter-spacing: 3px
+	border-radius: 7px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .25s ease
+	&:focus, &:hover
+		text-decoration: none
+	&:hover
+		background-color: darken($accent, 7)
+		box-shadow: 0 3px $accent inset
+		padding: 7px 45px
+		&::after
+			opacity: .22
+
+.button2
+	display: inline-block
+	width: 280px
+	height: 45px
+	color: #ffffff
+	border: 2px $accent solid
+	text-decoration: none
+	padding: 6px 45px
+	font-size: 24px
+	font-weight: 300
+	letter-spacing: 1px
+	border-radius: 7px
+	text-align: center
+	outline: none
+	transition: background-color .25s ease
+	&:focus, &:hover
+		text-decoration: none
+	&:hover
+		background-color: darken($accent, 7)
+		color: $gray
+		font-weight: normal
+		&::after
+			opacity: .22
+
+.section-button
+	margin: 30px 0
+	a
+		color: #000000
+	.button2
+		padding: 3px 45px
+
+.top-line
+	background-color: $gray
+	color: #ffffff
+	width: 100%
+	.logo
+		position: absolute
+		line-height: 70px
+		img
+			width: 135px
+			height: auto
+			margin-left: 40px
+	.phone
+		position: absolute
+		right: 30px
+		line-height: 70px
+		font-size: 20px
+		white-space: nowrap
+		.fa
+			color: $accent
+			font-size: 20px
+			margin-right: 7px
+		a
+			color: $accent
+	.main-menu
+		padding: 0
+		width: 100%
+		text-align: right
+		ul,li
+			list-style-type: none
+			padding: 0
+			margin: 0
+		li
+			display: inline-block
+			margin-right: -4px
+			&.active
+				a
+					color: #ffffff
+					background-color: lighten($gray, 5%)
+			&:hover
+				a
+					color: #ffffff
+					background-color: lighten($gray, 8%)
+		a
+			color: #dddddd
+			text-decoration: none
+			font-size: 16px
+			padding: 0 10px
+			line-height: 70px
+			display: block
+			transition: color .25s ease, background-color .25s ease
+	.hamburger
+		right: 0
+		line-height: 55px
+		position: absolute
+
+	.hamburger-box
+		width: 34px
+
+	.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+		border-radius: 0
+		background-color: #fff
+		height: 2px
+		width: 34px
+
+.mm-navbar
+	border-bottom: none
+
+.mm-panels
+	background-color: $gray
+
+ul.mm-listview
+	margin-top: 50px !important
+
+.mm-menu .mm-listview > li.mm-selected > a:not(.mm-next), .mm-menu .mm-listview > li.mm-selected > span
+	background-color: transparent
+	color: $accent
+
+.mm-listview>li.active
+	&>a
+		color: $accent
+		&::before
+			color: $accent
+
+.mm-listview>li>a
+	color: #ffffff
+	transition: color .25s ease
+	&:hover
+		color: $accent
+		&::before
+			color: $accent
+	&::before
+		transition: color .25s ease
+		content: '\f005'
+		font-family: fontawesome
+		margin-right: 8px
+		text-decoration: none
+		font-size: 12px
+		color: #dddddd
+.mm-menu.mm-offcanvas.mm-current
+	z-index: 2
+
+.overlay
+	background-size: cover
+	background-position: top
+	background-repeat: no-repeat
+	position: relative
+	display: block
+	&::before
+		content: ''
+		background-color: $gray
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		opacity: .45
+		transition: opacity .25s ease
+	//&:hover
+	//	&::before
+	//		opacity: .75
+
+.main-header
+	padding: 0
+	text-align: center
+	&-title
+		padding: 160px 0
+		width: 100%
+		color: #ffffff
+		position: relative
+		z-index: 1
+		h1
+			padding: 0
+			margin: 0
+			font-size: 72px
+			font-weight: bold
+		p
+			text-align: center
+			padding: 0 110px
+			margin: 0
+			font-size: 26px
+
+nav.soc
+	position: relative
+	z-index: 2
+	padding: 15px 20px 20px 0
+	width: 100%
+	ul, li
+		padding: 0
+		margin: 0
+		list-style-type: none
+		text-align: right
+	li
+		display: inline-block
+		a
+			display: block
+			text-align: center
+			border: 2px solid #ffffff
+			border-radius: 10em
+			width: 52px
+			height: 52px
+			line-height: 50px
+			color: $accent
+			background-color: #000000
+			font-size: 24px
+			margin: 4px
+			transition: border-color .25s ease, opacity .25s ease
+			.fa
+				transition: opacity .25s ease
+				opacity: .75
+			&:hover
+				border-color: $accent
+				.fa
+					opacity: 1
+
+.magnet
+	h2
+		text-transform: uppercase
+	p
+		line-height: 1.2
+	&-form
+		input
+			width: 100%
+			height: 45px
+			border-radius: 7px
+			border-color: lighten($gray, 40)
+			padding: 0 10px
+
+.about
+	padding: 40px 0 0
+	background-color: $gray
+	color: #ffffff
+	line-height: 1.3
+	font-weight: 300
+	&-photo
+		position: relative
+		bottom: -11px
+		img
+			width: 100%
+			height: auto
+	&-logo
+		text-align: center
+		margin-bottom: 10px
+	h2
+		font-size: 28px
+		text-align: center
+	&-button
+		text-align: center
+		padding: 10px 0 40px 0
+
+.facts
+	img
+		width: 100%
+		height: auto
+
+.products
+	padding-top: 0
+	h2
+		margin-bottom: 30px
+	&-item-cub
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		&-wrapper
+			overflow: hidden
+			position: relative
+			width: 100%
+			padding-bottom: 100% // пропорции блока определяются здесь
+		&-content
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			h2
+				font-size: 22px
+				color: #ffffff
+				text-align: center
+				text-transform: uppercase
+				padding: 45px 5px 35px
+			.price
+				margin: 0 auto
+				color: $accent
+				text-transform: uppercase
+				text-align: center
+				position: absolute
+				bottom: 30px
+				margin: 0 auto
+				left: 0
+				right: 0
+			p
+				color: #ffffff
+				padding: 70px 50px
+				line-height: 1.3
+		&:hover
+			h2
+				color: $accent
+				text-decoration: underline
+			.price
+				color: #ffffff
+	&-item-horizon
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		margin-top: 30px
+		&-wrapper
+			overflow: hidden
+			position: relative
+			width: 100%
+			padding-bottom: 47% // пропорции блока определяются здесь
+		&-content
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			h2
+				font-size: 22px
+				color: #ffffff
+				text-align: center
+				text-transform: uppercase
+				padding: 55px 5px 10px
+			.price
+				margin: 0 auto
+				color: $accent
+				text-transform: uppercase
+				text-align: center
+				position: absolute
+				bottom: 30px
+				margin: 0 auto
+				left: 0
+				right: 0
+			p
+				color: #ffffff
+				padding: 0 50px
+				line-height: 1.3
+		&:hover
+			h2
+				color: $accent
+				text-decoration: underline
+			.price
+				color: #ffffff
+
+.promo
+	background-color: $gray
+	color: #ffffff
+	line-height: 1.3
+	font-weight: 300
+	h2
+		margin-bottom: 30px
+	p
+		padding-top: 50px
+	&-video
+		iframe
+			width: 100%
+			height: 355px
+
+.blog
+	padding: 0 0 10px 0
+	&-item
+		margin-top: 30px
+		a
+			color: $text
+			font-weight: 300
+			text-decoration: none
+		&-img-news
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			width: 100%
+			height: 167px
+		&-content
+			h3
+				font-size: 18px
+				text-transform: uppercase
+			p
+				line-height: 1.2
+				font-size: 14px
+		&:hover
+			h3
+				text-decoration: underline
+			.overlay
+				opacity: .75
+
+.review
+	padding: 0
+	&-item
+		margin-top: 20px
+		&-video
+			iframe
+				width: 100%
+				height: 310px
+
+
+footer
+	width: 100%
+	min-height: 350px
+	background-color: $gray
+	color: lighten($gray, 35)
+	padding: 15px 0
+	.main-menu
+		padding: 0
+		width: 100%
+		text-align: center
+		ul,li
+			list-style-type: none
+			padding: 0
+			margin: 0
+		li
+			display: inline-block
+			margin-right: -4px
+			&.active
+				a
+					color: #ffffff
+					background-color: lighten($gray, 5%)
+			&:hover
+				a
+					color: #ffffff
+					background-color: lighten($gray, 8%)
+		a
+			color: lighten($gray, 35)
+			text-decoration: none
+			font-size: 13px
+			padding: 0 5px
+			line-height: 40px
+			display: block
+			transition: color .25s ease, background-color .25s ease
+	nav.soc
+		padding: 5px 0 50px 0
+		border-bottom: 1px lighten($gray, 15) solid
+		ul, li
+			text-align: center
+	.phone
+		line-height: 70px
+		font-size: 20px
+		white-space: nowrap
+		.fa
+			color: $accent
+			font-size: 20px
+			margin-right: 7px
+		a
+			color: $accent
+	.politic
+		text-align: right
+		padding-top: 30px
+		line-height: 1
+		ul,li
+			list-style-type: none
+			padding: 0
+			margin: 0
+		a
+			font-size: 13px
+			color: lighten($gray, 35)
+	.footer-content
+		.logo
+			margin-top: 30px
+		p
+			padding: 30px
+			font-size: 14px
+			line-height: 1.2
+		.copyright
+			font-size: 12px
+
+
+
+
+
+
+
+
+
+
 
 
 
