@@ -17,4 +17,14 @@ $(function() {
         $('.hamburger').removeClass('is-active');
     });
 
+    var mixer = mixitup('#category-items');
+
+    $(".categories li").click(function () {
+        $(".categories li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".category-item h3").equalHeights();
+    $(".category-item p").equalHeights();
+
 });
