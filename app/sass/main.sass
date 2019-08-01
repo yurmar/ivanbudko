@@ -582,8 +582,86 @@ footer
 				h3
 					text-decoration: underline
 
+.page
+	padding: 0
+	margin: 0
+	&-content
+		padding: 30px 0
+		h1
+			font-size: 18px
+			text-transform: uppercase
+			font-weight: bold
+		p
+			font-weight: 300
+			line-height: 1.5
+		img
+			width: 100%
+			height: auto
+			margin-bottom: 20px
 
-
+.sidebar
+	background-color: #f8f8f8
+	height: 100%
+	padding: 30px 10px
+	&-item
+		padding: 40px 0
+		border-bottom: 1px lighten($gray, 70) solid
+		&:first-child
+			padding-top: 0
+	.magnet
+		padding: 0
+		button
+			margin-top: 20px
+	&-menu
+		ul,li
+			list-style-type: none
+			padding: 0
+			margin: 0
+		li
+			margin: 0 10px
+			font-size: 14px
+			padding: 12px 10px 10px
+			border-bottom: 1px $accent solid
+			&:first-child
+				border-top: 1px $accent solid
+			a
+				color: $text
+				display: block
+	h3
+		font-size: 28px
+	&-similar
+		&-item
+			margin-top: 30px
+			a
+				color: $text
+				&:hover
+					text-decoration: none
+					h2
+						text-decoration: underline
+					.overlay
+						opacity: .75
+			&-title
+				display: flex
+				img
+					width: 100px
+					height: auto
+					max-height: 70px
+					margin: 0 5px 5px 0
+				h2
+					font-size: 18px
+			p
+				font-size: 14px
+				font-weight: 300
+				line-height: 1.2
+	&-subscribe
+		.button
+			display: flex
+			align-items: center
+			justify-content: center
+		.fa
+			color: red
+			font-size: 45px
+			margin-left: 10px
 
 
 

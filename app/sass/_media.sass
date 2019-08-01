@@ -56,6 +56,10 @@
       &-video
         iframe
           height: 260px
+  .sidebar
+    &-subscribe
+      .button
+        padding: 6px 25px
 
 
 
@@ -130,6 +134,30 @@
       .button
         padding: 6px 20px
         font-size: 20px
+  .sidebar
+    .magnet
+      h2
+        font-size: 16px
+      p
+        font-size: 14px
+    .button
+      padding: 6px 25px
+    &-similar
+      h3
+        font-size: 20px
+      &-item
+        &-title
+          display: block
+          img
+            width: 100%
+            height: auto
+            max-height: 150px
+    &-subscribe
+      .button
+        padding: 6px 7px
+        font-size: 16px
+      .fa
+        font-size: 35px
 
 
 // ≥768px
@@ -195,6 +223,15 @@
       &-video
         iframe
           height: 290px
+  .sidebar
+    &-item:nth-child(-n+2)
+      display: none
+    &-subscribe
+      .button
+        padding: 6px 145px
+        font-size: 18px
+      .fa
+        font-size: 45px
 
 
 // ≥576px
@@ -239,6 +276,8 @@
           padding-bottom: 0
         p
           padding-bottom: 10px
+
+
 
 /*==========  Mobile First  ==========*/
 
