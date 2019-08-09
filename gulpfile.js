@@ -48,6 +48,7 @@ gulp.task('scripts', function() {
         'app/libs/mmenu/js/jquery.mmenu.all.min.js',
         'app/libs/mixitup/mixitup.min.js',
         'app/libs/equalHeights/equalheights.js',
+        'app/libs/popup/jquery.magnific-popup.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

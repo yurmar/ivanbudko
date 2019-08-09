@@ -10,6 +10,14 @@ $(function() {
         }
     });
 
+    $(".popup-content").magnificPopup({type:"inline", midClick: true});
+
+    $(".team-sec-item").each(function(i) {
+        $(this).find(".popup-content").attr("href", "#work_" + i);
+        $(this).find(".team-sec-item-desc").attr("id", "work_" + i);
+
+    });
+
     var api = $('#my-menu').data('mmenu');
     api.bind('opened', function () {
         $('.hamburger').addClass('is-active');
