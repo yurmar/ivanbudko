@@ -3,7 +3,7 @@ $(function() {
     $('#my-menu').mmenu({
         extensions: [ 'widescreen', 'effect-menu-slide', 'pagedim-black' ],
         navbar: {
-            title: '<img src="img/logo-b@2x.png" alt="Тонусный зал Lis">'
+            title: '<img src="http://ivanbudko.yurmar.ru/wp-content/uploads/2019/08/logo-b@2x.png" alt="Иван Будько">'
         },
         offCanvas: {
             position  : 'left'
@@ -34,5 +34,6 @@ $(function() {
 
     $(".category-item h3").equalHeights();
     $(".category-item p").equalHeights();
+    $(".product-items p").equalHeights();
 
 });
